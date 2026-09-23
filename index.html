@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco Sort</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Game Edukasi Lingkungan</p>
+          <h1>Eco Sort</h1>
+        </div>
+        <button id="restartBtn" class="secondary-btn">Ulangi</button>
+      </header>
+
+      <main class="game-layout">
+        <section class="panel stats-panel">
+          <div class="stat-grid">
+            <div class="stat-box">
+              <span>Skor</span>
+              <strong id="scoreValue">0</strong>
+            </div>
+            <div class="stat-box">
+              <span>Level</span>
+              <strong id="levelValue">1</strong>
+            </div>
+            <div class="stat-box">
+              <span>Waktu</span>
+              <strong id="timeValue">12</strong>
+            </div>
+            <div class="stat-box">
+              <span>Nyawa</span>
+              <strong id="livesValue">3</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel game-panel">
+          <div class="task-box">
+            <span class="tag">Sampah berikut</span>
+            <h2 id="wasteName">Cangkang Pisang</h2>
+          </div>
+
+          <div class="bins-row">
+            <button class="bin-btn" data-bin="organik">
+              <span class="bin-icon">🟢</span>
+              <span>Organik</span>
+            </button>
+            <button class="bin-btn" data-bin="plastik">
+              <span class="bin-icon">🔵</span>
+              <span>Plastik</span>
+            </button>
+            <button class="bin-btn" data-bin="kertas">
+              <span class="bin-icon">🟡</span>
+              <span>Kertas</span>
+            </button>
+            <button class="bin-btn" data-bin="kaca">
+              <span class="bin-icon">🟣</span>
+              <span>Kaca</span>
+            </button>
+            <button class="bin-btn" data-bin="lainnya">
+              <span class="bin-icon">⚫</span>
+              <span>Lainnya</span>
+            </button>
+          </div>
+
+          <div id="feedback" class="feedback neutral">
+            Pilih jenis tempat sampah yang tepat.
+          </div>
+
+          <div id="infoBox" class="info-box">
+            <h3>Info pengelolaan sampah</h3>
+            <p>Jawablah terlebih dahulu untuk melihat tipsnya.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
